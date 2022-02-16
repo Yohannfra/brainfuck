@@ -24,7 +24,7 @@ static char *read_file(const char *fp)
         return NULL;
     }
 
-    fc = calloc(sizeof(char), sb.st_size);
+    fc = calloc(sb.st_size, sizeof(char));
     if (!fc) {
         return NULL;
     }
