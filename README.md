@@ -12,3 +12,11 @@ $ make
 ```bash
 $ ./brainfuck tests_programs/hello_world.bf #or any other .bf
 ```
+
+## Test
+
+Run tests with [jenrik](https://github.com/Yohannfra/JenRik)
+
+```
+$ jenrik test_brainfuck.toml
+```

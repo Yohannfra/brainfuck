@@ -1,0 +1,32 @@
+binary_path = "brainfuck"
+
+[no_arg]
+args = []
+status = 1
+stderr="USAGE: ./brainfuck file.bf\n"
+
+[bad_path]
+args = ["toto.bf"]
+status = 1
+stderr="Error reading file: toto.bf\n"
+
+[pg_hello_world]
+args = ["./tests_programs/hello_world.bf"]
+status = 0
+stdout="Hello World\n"
+
+[pg_54321]
+args = ["./tests_programs/54321.bf"]
+status = 0
+stdout="543210\n"
+
+[pg_print_with_loop]
+args = ["./tests_programs/print_with_loop.bf"]
+status = 0
+stdout="copy@copy.sh"
+
+[pg_print_input]
+args = ["./tests_programs/print_input.bf"]
+status = 0
+stdin=["hello"]
+stdout="hello"
